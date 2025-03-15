@@ -5,8 +5,11 @@ exports.register = async (req, res) => {
   try {
     const { name, email, phone, cpf, password } = req.body;
 
-    if ((!name || !email || !phone || !cpf, !password)) {
+    if (!name || !email || !phone || !cpf || !password) {
       return res.status(400).json({ message: "Todos os campos são obrigatórios!" });
+    }
+    if (!/^\d{11}$/.test(cpf)) {
+      return res.status(400).json({ message: "CPF deve conter exatamente 11 números" });
     }
 
     const existingUser = await User.findOne({ $or: [{ email }, { cpf }] });
