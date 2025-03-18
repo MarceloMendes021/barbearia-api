@@ -5,8 +5,8 @@ const UserSchema = new mongoose.Schema(
     name: { type: String, required: true },
     email: { type: String, required: true, unique: true },
     phone: { type: String, required: true },
-    cpf: { type: String, required: true, unique: true, match: /^[0-9]{11}$/, minlength: 11, maxlength: 11 },
-    password: { type: String, required: true, unique: true },
+    cpf: { type: String, required: true, unique: true },
+    password: { type: String, required: true },
     role: { type: String, enum: ["admin", "client"], default: "client" },
   },
   { timestamps: true }
