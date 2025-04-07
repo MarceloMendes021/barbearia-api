@@ -1,6 +1,6 @@
 # Barbearia API
 
-![GitHub License](https://img.shields.io/github/license/MarceloMendes021/barbershop-api)
+![GitHub License](https://img.shields.io/github/license/MarceloMendes021/barbearia-api)
 
 ## Descrição
 
@@ -33,13 +33,13 @@ Este projeto é uma API RESTful para um sistema de agendamento de barbearia. A A
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/MarceloMendes021/barbershop-api
+   git clone https://github.com/MarceloMendes021/barbearia-api
    ```
 
 2. Navegue até o diretório do projeto:
 
    ```bash
-   cd barbershop-api
+   cd barbearia-api
    ```
 
 3. Instale as dependências:
@@ -54,6 +54,8 @@ Este projeto é uma API RESTful para um sistema de agendamento de barbearia. A A
    ```env
    PORT=3000
    MONGO_URI=sua_string_de_conexao_mongodb
+   JWT_SECRET=sua_chave_secreta_jwt
+
    ```
 
 2. Inicie o servidor:
