@@ -1,6 +1,6 @@
 # Barbearia API
 
-![GitHub License](https://img.shields.io/github/license/MarceloMendes021/barbearia-api)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## Descrição
 
